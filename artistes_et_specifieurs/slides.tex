@@ -1,0 +1,125 @@
+%\documentclass[notes=only]{beamer}
+\documentclass{beamer}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usetheme[progressbar=foot]{metropolis}
+\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen}
+\usepackage{soul}
+\usepackage{fp}
+
+
+\newcommand\twocolumns[3]{
+  \FPeval{\leftsize}{#1}
+  \FPeval{\rightsize}{1 - #1}
+
+  \begin{columns}
+    \begin{column}{\leftsize\textwidth}
+      #2
+    \end{column}
+    \begin{column}{\rightsize\textwidth}
+      #3
+    \end{column}
+  \end{columns}
+}
+
+
+\metroset{block=fill}
+
+\newcommand{\singleimage}[2][\textwidth]{ \center \includegraphics[width=#1]{#2} }
+\newcommand{\singletext}[1]{ \center{ \Large #1} }
+
+
+%\setbeamertemplate{frame footer}{
+%  \texttt{#vsmp}, \texttt{http://aidants-keilana.fr/}
+%}
+
+
+\title{Artistes et Spécifieurs}
+
+\author{
+  Virginie Albiez \texttt{<virginie.albiez@aidants-keilana.fr>} \\
+  \\[5mm]
+  \includegraphics[height=3cm]{includes/logo} \hfill
+}
+
+
+\begin{document}
+
+
+\frame{\titlepage}
+
+
+\begin{frame}{Qui}
+  %\singleimage[0.6\textwidth]{includes/virginie_albiez}
+  \begin{center}
+    Virginie Albiez \\
+    \texttt{$<$virginie.albiez@aidants-keilana.fr$>$} \\
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Suivre nos pieds}
+  \twocolumns{0.3}{
+    \singleimage{includes/foots.png}
+  }{
+    \Large{Si vous n’apprenez rien ou que vous ne contribuez pas, suivez vos pieds !}
+  }
+\end{frame}
+
+
+\begin{frame}{Objectifs de cette présentation}
+  \begin{itemize}[<+->]
+    \item Qu'êtes-vous venu chercher ?
+    \item A quoi verrez-vous que c'était positif pour vous ?
+    \item Qu'en pense votre voisin ou votre voisine ?
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Mes objectifs de cette présentation}
+  \begin{itemize}[<+->]
+    \item Un nouveau concept pour se parler et s'améliorer
+    \item Des outils
+    \item Le plaisir du partage
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Perfection game}
+
+  \begin{block}{Je mets la note : }
+    0 1 2 3 4 5 6 \alert{7} 8 9 10
+  \end{block}
+  \begin{block}{Parce que j'ai beaucoup aimé}
+      \begin{itemize}
+        \item
+        \item
+      \end{itemize}
+  \end{block}
+  \begin{block}{J'aurais mis 10 si}
+      \begin{itemize}
+        \item
+        \item
+      \end{itemize}
+  \end{block}
+
+
+    Des éléments concrets, actionnables, observables.
+  \note{
+    À quoi avez vous vue que c'était super.
+    À quoi verriez vous que c'est encore mieux.
+
+    Exemple du : "c'est de la merde" ou du "moins scolaire"
+  }
+\end{frame}
+
+
+\section{Round 1}
+\note{10 min}
+
+
+\begin{frame}{Titre}
+\end{frame}
+
+\end{document}
